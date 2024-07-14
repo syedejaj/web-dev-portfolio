@@ -191,3 +191,57 @@ footer textarea {
     margin-bottom: 24px;
     width: 100%;
 }
+
+/* responsive design styles start from here */
+
+@media screen and (max-width: 576px) {
+
+    .skills-container,
+    .resume-container,
+    footer,
+    .banner,
+    .about,
+    nav,
+    nav>ul,
+    .about-items,
+    .banner-content {
+        flex-direction: column;
+    }
+
+    footer,
+    .about {
+        padding: 20px;
+    }
+
+    nav>ul {
+        gap: 20px;
+    }
+
+    .banner {
+        margin: 20px;
+    }
+
+    .banner-profile {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-weight: 800;
+        font-size: 50px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        width: calc(100% - 40px);
+    }
+
+    .header {
+        background-image: none;
+    }
+
+}
